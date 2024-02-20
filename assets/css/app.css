@@ -8,16 +8,22 @@
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif;
+  color: #23120F;
 }
 
 p {
   font-family: "DM Sans", sans-serif;
   line-height: 1.4;
+  color: #AFAFAF;
 }
 
-a {
+a, button {
   text-decoration: none;
   cursor: pointer;
+}
+
+i {
+  color: #AE3824;
 }
 
 /*# sourceMappingURL=app.css.map */

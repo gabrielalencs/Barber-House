@@ -580,6 +580,8 @@ i{
   justify-content: space-between;
   border-width: 1px;
   border-bottom-width: 2px;
+  border-right-width: 0px;
+  border-left-width: 0px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1rem;
@@ -590,7 +592,7 @@ i{
 .show-menu{
   visibility: visible !important;
   top: 0px !important;
-  z-index: 10 !important;
+  z-index: 10;
   opacity: 1 !important;
 }
 

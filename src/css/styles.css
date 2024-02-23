@@ -31,12 +31,12 @@
         @apply font-poppins px-6 py-4 flex justify-between items-center border border-b-2 max-w-1280 mx-auto;
     }
 
-    .menu {
+    .menu-desktop {
         @apply flex gap-7;
     }
 
     .menu-mobile {
-        @apply absolute left-0 h-screen w-screen flex flex-col pt-32 items-center gap-14 text-3xl font-bold bg-red-50 opacity-0 invisible top-1000;
+        @apply absolute left-0 h-screen w-screen flex flex-col pt-16 items-center gap-14 text-2xl font-bold bg-white opacity-0 invisible top-1000;
     }
 
     .menu-mobile {
@@ -44,7 +44,7 @@
     }
 
     .show-menu {
-        @apply opacity-100 visible top-0 z-10;
+        @apply !opacity-100 !visible !top-0 !z-10;
     }
 
     .li-after {

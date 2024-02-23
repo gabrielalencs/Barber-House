@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/js/script.js"],
+  content: [ "./src/js/script.js", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -14,7 +14,8 @@ module.exports = {
         'gray-primary': '#AFAFAF'
       },
       spacing: {
-        '1280': '1280px'
+        '1280': '1280px',
+        '1000': '-1000px'
       }
     },
   },

@@ -461,7 +461,7 @@ p{
   color: rgb(175 175 175 / var(--tw-text-opacity));
 }
 
-a, button{
+a, i{
   cursor: pointer;
   text-decoration-line: none;
 }
@@ -584,11 +584,35 @@ i{
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: Poppins, sans-serif;
 }
 
-.menu{
+.menu-mobile{
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: -1000px;
   display: flex;
-  gap: 1.75rem;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  padding-top: 8rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.show-menu{
+  visibility: visible;
+  top: 0px;
+  z-index: 10;
+  opacity: 1;
 }
 
 .li-after::after{
@@ -606,19 +630,27 @@ i{
   content: var(--tw-content);
 }
 
-.hidden{
-  display: none;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media (min-width: 768px){
+  .md\:menu{
+    display: flex;
+    gap: 1.75rem;
+  }
 }
 
 .hover\:text-brown-primary:hover{

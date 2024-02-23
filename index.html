@@ -20,9 +20,12 @@
             <img src="src/image/logo-white-and-orange.svg" alt="Logo Barber House">
         </div>
 
-        <div class="hidden md:block">
+        <div class="md:block">
             <nav>
-                <ul class="menu">
+                <ul class="menu-mobile md:menu" id="menu-container">
+                    <li>
+                        <i class="icon-close text-5xl" id="menu-close"></i>
+                    </li>
                     <li>
                         <a href="#" class="transition-all hover:text-brown-primary li-after hover:after:w-full">
                             Home
@@ -58,15 +61,14 @@
         </div>
 
         <div class="md:hidden">
-            <i class="icon-menu text-2xl"></i>
-            <i class="icon-close hidden"></i>
+            <i class="icon-menu text-2xl" id="menu-btn"></i>
         </div>
     </header>
 
     
     <!-- Scripts JS -->
-    <script src="assets/js/script.js"></script>
+    <script src="src/js/script.js"></script>
     <!-- AOS Scroll -->
-    <script src="assets/js/aosScroll.js"></script>
+    <script src="src/js/aosScroll.js"></script>
 </body>
 </html>

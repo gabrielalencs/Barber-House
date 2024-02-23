@@ -25,3 +25,17 @@
         @apply text-brown-primary;
     }
 }
+
+@layer components {
+    .styles-header {
+        @apply px-6 py-4 flex justify-between items-center border border-b-2 max-w-1280 mx-auto;
+    }
+
+    .menu {
+        @apply flex gap-7;
+    }
+
+    .li-after {
+        @apply after:content-[''] after:block after:h-0.5 after:bg-brown-primary after:transition-all after:w-0 after:relative after:top-6;
+    }
+}

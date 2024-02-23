@@ -12,6 +12,9 @@ module.exports = {
         'brown-secondary': '#23120F',
         'white-primary': '#FAF9F9',
         'gray-primary': '#AFAFAF'
+      },
+      spacing: {
+        '1280': '1280px'
       }
     },
   },

@@ -571,6 +571,8 @@ i{
   --tw-backdrop-sepia:  ;
 }
 
+/* Header Styles */
+
 .styles-header{
   margin-left: auto;
   margin-right: auto;
@@ -631,11 +633,6 @@ i{
   .icon-close-styles{
     display: none;
   }
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl{

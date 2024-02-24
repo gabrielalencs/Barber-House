@@ -596,6 +596,17 @@ i{
   opacity: 1 !important;
 }
 
+.link-menu{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.link-menu:hover{
+  --tw-text-opacity: 1;
+  color: rgb(174 56 36 / var(--tw-text-opacity));
+}
+
 .li-after::after{
   position: relative;
   top: 1.5rem;
@@ -622,20 +633,14 @@ i{
   }
 }
 
-.link-menu{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.link-menu:hover{
-  --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 @media (max-width: 992px){

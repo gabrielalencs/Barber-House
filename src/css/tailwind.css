@@ -458,7 +458,7 @@ p{
   font-family: DM Sans, sans-serif;
   line-height: 1.5;
   --tw-text-opacity: 1;
-  color: rgb(175 175 175 / var(--tw-text-opacity));
+  color: rgb(117 117 117 / var(--tw-text-opacity));
 }
 
 a, i{
@@ -635,6 +635,26 @@ i{
   }
 }
 
+.relative{
+  position: relative;
+}
+
+.z-10{
+  z-index: 10;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.pr-14{
+  padding-right: 3.5rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -668,6 +688,100 @@ i{
     display: flex;
     gap: 1.75rem;
   }
+}
+
+.after\:absolute::after{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:top-\[-100\]::after{
+  content: var(--tw-content);
+  top: -100;
+}
+
+.after\:top-\[-160\]::after{
+  content: var(--tw-content);
+  top: -160;
+}
+
+.after\:top-\[-60\]::after{
+  content: var(--tw-content);
+  top: -60px;
+}
+
+.after\:left-12::after{
+  content: var(--tw-content);
+  left: 3rem;
+}
+
+.after\:left-14::after{
+  content: var(--tw-content);
+  left: 3.5rem;
+}
+
+.after\:left-1::after{
+  content: var(--tw-content);
+  left: 0.25rem;
+}
+
+.after\:left-16::after{
+  content: var(--tw-content);
+  left: 4rem;
+}
+
+.after\:block::after{
+  content: var(--tw-content);
+  display: block;
+}
+
+.after\:h-full::after{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.after\:w-full::after{
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:rounded-sm::after{
+  content: var(--tw-content);
+  border-radius: 0.125rem;
+}
+
+.after\:rounded-md::after{
+  content: var(--tw-content);
+  border-radius: 0.375rem;
+}
+
+.after\:rounded-t-md::after{
+  content: var(--tw-content);
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.after\:rounded-r-md::after{
+  content: var(--tw-content);
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.after\:rounded-r-none::after{
+  content: var(--tw-content);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.after\:bg-brown-primary::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+}
+
+.after\:content-\[\'\'\]::after{
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .hover\:after\:w-full:hover::after{

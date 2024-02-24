@@ -15,11 +15,12 @@ module.exports = {
         'brown-primary': '#AE3824',
         'brown-secondary': '#23120F',
         'white-primary': '#FAF9F9',
-        'gray-primary': '#AFAFAF'
+        'gray-primary': '#757575'
       },
       spacing: {
         '1280': '1280px',
-        '1000': '-1000px'
+        '1000': '-1000px',
+        '[-60]': '-60px'
       },
 
     }

@@ -50,4 +50,12 @@
     .li-after {
         @apply after:content-[''] after:block after:h-0.5 after:w-0 after:bg-brown-primary after:transition-all after:relative after:top-6;
     }
+
+    .icon-close-styles {
+        @apply text-5xl min-lg:hidden;
+    }
+
+    .link-menu {
+        @apply transition-all hover:text-brown-primary;
+    }
 }

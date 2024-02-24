@@ -611,20 +611,31 @@ i{
   content: var(--tw-content);
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl{
+.icon-close-styles{
   font-size: 3rem;
   line-height: 1;
 }
 
-.transition-all{
+@media (min-width: 992px){
+  .icon-close-styles{
+    display: none;
+  }
+}
+
+.link-menu{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.link-menu:hover{
+  --tw-text-opacity: 1;
+  color: rgb(174 56 36 / var(--tw-text-opacity));
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (max-width: 992px){
@@ -655,11 +666,6 @@ i{
     display: flex;
     gap: 1.75rem;
   }
-}
-
-.hover\:text-brown-primary:hover{
-  --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
 }
 
 .hover\:after\:w-full:hover::after{

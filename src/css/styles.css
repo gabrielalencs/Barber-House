@@ -47,7 +47,7 @@
     }
 
     .show-menu {
-        @apply !top-0 !opacity-100 !visible  z-10;
+        @apply !top-0 !opacity-100 !visible z-30;
     }
 
     .link-menu {

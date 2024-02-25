@@ -61,4 +61,15 @@
     .icon-close-styles {
         @apply text-5xl min-lg:hidden;
     }
+
+
+    /* Home Section */
+
+    .after-element {
+        @apply after:content-[''] after:block after:w-full after:h-full after:bg-brown-primary after:absolute after:top-[-60] after:left-14 after:rounded-t-md after:rounded-r-none min-lg:after:rounded-r-md;
+    }
+
+    
+
+
 }

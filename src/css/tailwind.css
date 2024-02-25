@@ -715,6 +715,23 @@ i{
   overflow-x: hidden;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded-s{
+  border-start-start-radius: 0.25rem;
+  border-end-start-radius: 0.25rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -830,6 +847,10 @@ i{
     margin-top: 7rem;
   }
 
+  .min-lg\:mt-24{
+    margin-top: 6rem;
+  }
+
   .min-lg\:flex{
     display: flex;
   }
@@ -848,6 +869,10 @@ i{
 
   .min-lg\:gap-10{
     gap: 2.5rem;
+  }
+
+  .min-lg\:rounded-md{
+    border-radius: 0.375rem;
   }
 
   .min-lg\:pr-14{

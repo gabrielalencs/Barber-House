@@ -31,6 +31,15 @@
 }
 
 @layer components {
+    .divide-1 {
+        height: 1px;
+        background: linear-gradient(270deg, hsla(9, 36%, 57%, 1) 0%, hsla(9, 65%, 88%, 0.34) 100%);
+    }
+
+    .menu-mobile {
+        transition: all .4s ease;
+    }
+
 
     .limit-content {
         @apply max-w-1280 mx-auto;
@@ -48,10 +57,6 @@
 
     .menu-mobile {
         @apply absolute left-0 top-1000 h-screen w-screen flex flex-col items-center gap-14 pt-16 text-2xl font-bold bg-white opacity-0 invisible ;
-    }
-
-    .menu-mobile {
-        transition: all .4s ease;
     }
 
     .show-menu {

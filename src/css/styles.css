@@ -9,6 +9,10 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply m-0 p-0 box-border;
+    }
+
     h1, h2, h3 {
         @apply font-poppins text-brown-secondary;
     }
@@ -28,10 +32,14 @@
 
 @layer components {
 
+    .limit-content {
+        @apply max-w-1280 mx-auto;
+    }
+
     /* Header Styles */
 
     .styles-header {
-        @apply font-poppins px-6 py-4 flex justify-between items-center border border-b-2 border-r-0 border-l-0 max-w-1280 mx-auto;
+        @apply font-poppins px-6 py-4 flex justify-between items-center border border-b-2 border-r-0 border-l-0;
     }
 
     .menu-desktop {
@@ -64,6 +72,10 @@
 
 
     /* Home Section */
+
+    .styles-home {
+        @apply mt-20  min-lg:flex min-lg:gap-10 min-lg:items-center;
+    }
 
     .after-element {
         @apply after:content-[''] after:block after:w-full after:h-full after:bg-brown-primary after:absolute after:top-[-60] after:left-14 after:rounded-t-md after:rounded-r-none min-lg:after:rounded-r-md;

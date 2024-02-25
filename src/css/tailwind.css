@@ -583,22 +583,33 @@ i{
   max-width: 1280px;
 }
 
-/* Header Styles */
-
-.styles-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-width: 1px;
-  border-bottom-width: 2px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: Poppins, sans-serif;
+.btn{
+  border-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(174 56 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: DM Sans, sans-serif;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
+
+.btn:hover{
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(174 56 36 / var(--tw-text-opacity));
+}
+
+/* Header Styles */
 
 .show-menu{
   visibility: visible !important;
@@ -633,34 +644,11 @@ i{
   content: var(--tw-content);
 }
 
-.icon-close-styles{
-  font-size: 3rem;
-  line-height: 1;
-}
-
-@media (min-width: 992px){
-  .icon-close-styles{
-    display: none;
-  }
-}
-
 /* Home Section */
-
-.styles-home{
-  margin-top: 5rem;
-}
-
-@media (min-width: 992px){
-  .styles-home{
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-  }
-}
 
 .after-element::after{
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 3.5rem;
   display: block;
   height: 100%;
@@ -695,6 +683,10 @@ i{
   margin-top: 2.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -703,26 +695,45 @@ i{
   margin-top: 1.75rem;
 }
 
+.flex{
+  display: flex;
+}
+
 .w-full{
   width: 100%;
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.items-center{
+  align-items: center;
 }
 
-.border-2{
-  border-width: 2px;
+.justify-between{
+  justify-content: space-between;
 }
 
-.border-brown-primary{
-  --tw-border-opacity: 1;
-  border-color: rgb(174 56 36 / var(--tw-border-opacity));
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
-.bg-brown-primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+.border{
+  border-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-l-0{
+  border-left-width: 0px;
+}
+
+.border-r-0{
+  border-right-width: 0px;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-7{
@@ -730,13 +741,13 @@ i{
   padding-right: 1.75rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.pr-14{
-  padding-right: 3.5rem;
+.pr-9{
+  padding-right: 2.25rem;
 }
 
 .text-center{
@@ -751,38 +762,28 @@ i{
   font-family: Poppins, sans-serif;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
   font-weight: 700;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .text-brown-primary{
   --tw-text-opacity: 1;
   color: rgb(174 56 36 / var(--tw-text-opacity));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 @media (max-width: 992px){
@@ -815,15 +816,6 @@ i{
   }
 }
 
-.hover\:bg-transparent:hover{
-  background-color: transparent;
-}
-
-.hover\:text-brown-primary:hover{
-  --tw-text-opacity: 1;
-  color: rgb(174 56 36 / var(--tw-text-opacity));
-}
-
 .hover\:after\:w-full:hover::after{
   content: var(--tw-content);
   width: 100%;
@@ -834,12 +826,28 @@ i{
     order: 2;
   }
 
+  .min-lg\:mt-28{
+    margin-top: 7rem;
+  }
+
+  .min-lg\:flex{
+    display: flex;
+  }
+
   .min-lg\:hidden{
     display: none;
   }
 
   .min-lg\:flex-1{
     flex: 1 1 0%;
+  }
+
+  .min-lg\:items-center{
+    align-items: center;
+  }
+
+  .min-lg\:gap-10{
+    gap: 2.5rem;
   }
 
   .min-lg\:pr-14{

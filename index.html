@@ -17,7 +17,8 @@
 </head>
 
 <body>
-    <header class="styles-header limit-content">
+    <header class="font-poppins px-6 py-4 flex justify-between items-center border border-b-2 border-r-0 border-l-0 limit-content">
+
         <div>
             <img src="src/image/logo-white-and-orange.svg" alt="Logo Barber House">
         </div>
@@ -25,7 +26,7 @@
         <nav>
             <ul class="max-lg:menu-mobile min-lg:menu-desktop" id="menu-container">
                 <li>
-                    <i class="icon-close icon-close-styles" id="menu-close"></i>
+                    <i class="icon-close text-5xl min-lg:hidden" id="menu-close"></i>
                 </li>
 
                 <li>
@@ -70,25 +71,30 @@
         <div class="min-lg:hidden">
             <i class="icon-menu text-3xl" id="menu-btn"></i>
         </div>
+
     </header>
 
-    <main>
-        <section class="styles-home limit-content">
-            <div class="pr-14 min-lg:order-2 min-lg:flex-1">
-                <div class=" relative after-element">
+    <main class="overflow-x-hidden">
+        <section class="mt-20 min-lg:mt-28 min-lg:flex min-lg:gap-10 min-lg:items-center limit-content">
+
+            <div class="pr-9 min-lg:order-2 min-lg:flex-1">
+                <div class="relative after-element">
                     <img src="src/image/image-home.svg" alt="company barber cutting a client's hair" class="w-full z-10 relative">
                 </div>
             </div>
 
             <div class="mt-10 px-7 text-center min-lg:flex-1 min-lg:text-left">
-                <h1 class="font-poppins text-3xl font-bold min-lg:text-4xl min-lg:leading-normal">
+                <h1 class="font-poppins font-bold text-2xl md:text-3xl min-lg:text-4xl min-lg:leading-normal">
                     Welcome to a whole new experience of <span class="text-brown-primary">cut</span>
                 </h1>
-                <p class="mt-4 font-dm-sans text-lg min-lg:pr-14">
+
+                <p class="mt-4 font-dm-sans text-md md:text-lg min-lg:pr-14">
                     You'll leave lookin’ absolutely handsome and ready to take over the world.
                 </p>
-                <button class="mt-7 font-dm-sans px-7 py-3 bg-brown-primary text-white rounded font-semibold border-2 border-brown-primary transition-all hover:bg-transparent hover:text-brown-primary">Mark an appointment</button>
+
+                <button class="mt-7 btn">Mark an appointment</button>
             </div>
+
         </section>
     </main>
 

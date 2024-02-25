@@ -73,9 +73,4 @@
         @apply after:content-[''] after:block after:w-full after:h-full after:bg-brown-primary after:absolute after:top-[-40] after:left-14 after:rounded-t-md after:rounded-r-none min-lg:after:rounded-r-md;
     }
 
-    .image-container {
-        @apply ;
-    }
-
-
 }

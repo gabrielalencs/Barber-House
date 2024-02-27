@@ -703,49 +703,26 @@ i{
   }
 }
 
-.absolute{
+/* Team Section */
+
+.name-barber{
   position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .relative{
   position: relative;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.bottom-2{
-  bottom: 0.5rem;
-}
-
-.left-2{
-  left: 0.5rem;
-}
-
-.bottom-3{
-  bottom: 0.75rem;
-}
-
-.left-3{
-  left: 0.75rem;
-}
-
 .z-10{
   z-index: 10;
-}
-
-.z-40{
-  z-index: 40;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mt-10{
@@ -809,10 +786,6 @@ i{
   gap: 3.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-5{
   gap: 1.25rem;
 }
@@ -843,10 +816,6 @@ i{
 
 .border-r-0{
   border-right-width: 0px;
-}
-
-.border-r{
-  border-right-width: 1px;
 }
 
 .border-brown-primary{
@@ -919,11 +888,6 @@ i{
   line-height: 1;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -931,11 +895,6 @@ i{
 .text-brown-primary{
   --tw-text-opacity: 1;
   color: rgb(174 56 36 / var(--tw-text-opacity));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (max-width: 992px){
@@ -1055,16 +1014,7 @@ i{
     text-align: center;
   }
 
-  .min-lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .min-lg\:leading-normal{
     line-height: 1.5;
-  }
-
-  .first-line\:min-lg\:justify-center::first-line{
-    justify-content: center;
   }
 }

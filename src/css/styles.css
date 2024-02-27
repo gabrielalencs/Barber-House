@@ -36,6 +36,11 @@
         background: linear-gradient(270deg, hsla(9, 36%, 57%, 1) 0%, hsla(9, 65%, 88%, 0.34) 100%);
     }
 
+    .divide-2 {
+        height: 1px;
+        background: linear-gradient(270deg, hsla(9, 65%, 88%, 0.34), hsla(9, 36%, 57%, 1));
+    }
+
     .menu-mobile {
         transition: all .4s ease;
     }
@@ -71,11 +76,19 @@
         @apply after:content-[''] after:block after:h-0.5 after:w-0 after:bg-brown-primary after:transition-all after:relative after:top-6;
     }
 
+    /* Main Content */
+
+    .main-title {
+        @apply font-bold text-2xl md:text-3xl min-lg:text-4xl;
+    }
+
 
     /* Home Section */
 
     .after-element {
         @apply after:content-[''] after:block after:w-full after:h-full after:bg-brown-primary after:absolute after:top-[-40] after:left-14 after:rounded-t-md after:rounded-r-none min-lg:after:rounded-r-md;
     }
+
+
 
 }

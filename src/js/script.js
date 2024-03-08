@@ -9,3 +9,5 @@ buttonCloseMenuMobile.addEventListener('click', toggleMenu)
 function toggleMenu() {
     menuNavContainer.classList.toggle('show-menu');
 }
+
+// Swiper JS

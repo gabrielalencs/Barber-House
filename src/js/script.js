@@ -13,22 +13,23 @@ function toggleMenu() {
 // Swiper JS
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
-    grabCursor: true,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
     breakpoints: {
-        50: {
+        10: {
             slidesPerView: 1,
         },
-        481: {
+        768: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 60
         },
-        668: {
+        1024: {
             slidesPerView: 3,
+            spaceBetween: 50
+
         }
     }
 });

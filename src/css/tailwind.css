@@ -726,8 +726,20 @@ i{
 
 /* Main Content */
 
+.static{
+  position: static;
+}
+
+.\!static{
+  position: static !important;
+}
+
 .fixed{
   position: fixed;
+}
+
+.absolute{
+  position: absolute;
 }
 
 .relative{
@@ -750,12 +762,28 @@ i{
   top: 5rem !important;
 }
 
+.top-10{
+  top: 2.5rem;
+}
+
+.\!top-5{
+  top: 1.25rem !important;
+}
+
+.\!top-10{
+  top: 2.5rem !important;
+}
+
 .z-10{
   z-index: 10;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.\!z-50{
+  z-index: 50 !important;
 }
 
 .col-span-2{
@@ -836,6 +864,54 @@ i{
 
 .h-60{
   height: 15rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.\!h-80{
+  height: 20rem !important;
+}
+
+.\!h-8{
+  height: 2rem !important;
+}
+
+.\!h-72{
+  height: 18rem !important;
+}
+
+.\!h-96{
+  height: 24rem !important;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.h-5\/6{
+  height: 83.333333%;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .w-8{
@@ -947,6 +1023,10 @@ i{
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -972,6 +1052,16 @@ i{
   padding-bottom: 1rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-16{
   padding-bottom: 4rem;
 }
@@ -982,6 +1072,10 @@ i{
 
 .pr-9{
   padding-right: 2.25rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -1100,6 +1194,10 @@ i{
     margin-top: 8rem;
   }
 
+  .min-lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .min-lg\:flex{
     display: flex;
   }
@@ -1144,6 +1242,11 @@ i{
     border-radius: 0.375rem;
   }
 
+  .min-lg\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .min-lg\:pb-32{
     padding-bottom: 8rem;
   }
@@ -1154,6 +1257,10 @@ i{
 
   .min-lg\:text-left{
     text-align: left;
+  }
+
+  .min-lg\:text-center{
+    text-align: center;
   }
 
   .min-lg\:leading-normal{

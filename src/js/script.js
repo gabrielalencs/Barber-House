@@ -27,7 +27,7 @@ function toggleMenu() {
 
 function activateMenuAtCurrentSection() {
 
-    const checkpoint = window.scrollY + (window.innerHeight / 10) * 6;
+    const checkpoint = window.scrollY + (window.innerHeight / 10) * 4;
 
     for (const section of sections) {
         const sectionTop = section.offsetTop;

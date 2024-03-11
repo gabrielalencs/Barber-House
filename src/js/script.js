@@ -27,13 +27,16 @@ function toggleMenu() {
 
 function activateMenuAtCurrentSection() {
 
-    const checkpoint = window.scrollY + (window.innerHeight / 10) * 4;
+    const checkpoint = window.scrollY + (window.innerHeight / 10) * 4; // Calcula o "checkpoint", que é a posição vertical atual da janela mais 40% da altura da janela.
 
     for (const section of sections) {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-        const navLink = document.querySelector('nav ul li a[href="#' + sectionId + '"]');
+        const sectionTop = section.offsetTop; // Obtém a posição vertical superior da seção em relação ao topo do documento.
+
+        const sectionHeight = section.offsetHeight; // Obtém a altura da seção.
+
+        const sectionId = section.getAttribute('id'); // Obtém o ID da seção.
+        
+        const navLink = document.querySelector('nav ul li a[href="#' + sectionId + '"]'); // Encontra o link de navegação correspondente à seção atual com base no ID da seção.
 
         const checkpointStart = checkpoint >= sectionTop;
         const checkpointEnd = checkpoint <= sectionTop + sectionHeight;

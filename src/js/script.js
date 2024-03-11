@@ -2,10 +2,16 @@ const buttonMenuMobile = document.getElementById('menu-btn');
 const menuNavContainer = document.getElementById('menu-container');
 const buttonCloseMenuMobile = document.getElementById('menu-close');
 const headerContainer = document.getElementById('header');
+const sections = document.querySelectorAll('main section[id]');
+
 
 buttonMenuMobile.addEventListener('click', toggleMenu);
 buttonCloseMenuMobile.addEventListener('click', toggleMenu);
-document.addEventListener('scroll', addBoxShadow);
+
+window.addEventListener('scroll', function() {
+    addBoxShadow();
+    activateMenuAtCurrentSection();
+});
 
 
 function addBoxShadow() {
@@ -16,6 +22,27 @@ function addBoxShadow() {
 
 function toggleMenu() {
     menuNavContainer.classList.toggle('show-menu');
+}
+
+
+function activateMenuAtCurrentSection() {
+
+    const checkpoint = window.scrollY + (window.innerHeight / 10) * 6;
+
+    for (const section of sections) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector('nav ul li a[href="#' + sectionId + '"]');
+
+        const checkpointStart = checkpoint >= sectionTop;
+        const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
+
+        checkpointStart && checkpointEnd
+        ? navLink.classList.add('active') 
+        : navLink.classList.remove('active')
+    }
+
 }
 
 

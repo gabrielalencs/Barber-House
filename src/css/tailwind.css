@@ -454,7 +454,9 @@ video {
   padding: 0px;
 }
 
-h1, h2, h3{
+h1,
+    h2,
+    h3{
   font-family: Poppins, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(35 18 15 / var(--tw-text-opacity));
@@ -467,7 +469,8 @@ p{
   color: rgb(117 117 117 / var(--tw-text-opacity));
 }
 
-a, i{
+a,
+    i{
   cursor: pointer;
   text-decoration-line: none;
 }
@@ -587,6 +590,20 @@ i{
   background: linear-gradient(270deg, hsla(9, 65%, 88%, 0.34), hsla(9, 36%, 57%, 1));
 }
 
+.menu-mobile,
+    nav ul li a::after {
+  transition: all .4s ease;
+}
+
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  font-weight: 600;
+  color: #AE3824
+}
+
 .limit-content{
   margin-left: auto;
   margin-right: auto;
@@ -647,9 +664,6 @@ i{
   width: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(174 56 36 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -724,7 +738,7 @@ i{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-/* Main Content */
+/* End Main Content */
 
 .\!static{
   position: static !important;
@@ -752,6 +766,10 @@ i{
 
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .mt-12{
@@ -788,10 +806,6 @@ i{
 
 .mt-7{
   margin-top: 1.75rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
 }
 
 .flex{
@@ -930,6 +944,11 @@ i{
   padding-right: 1.75rem;
 }
 
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -938,16 +957,6 @@ i{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-16{
@@ -1034,27 +1043,9 @@ i{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-xl{
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow{
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

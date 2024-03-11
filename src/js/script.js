@@ -1,17 +1,28 @@
 const buttonMenuMobile = document.getElementById('menu-btn');
 const menuNavContainer = document.getElementById('menu-container');
 const buttonCloseMenuMobile = document.getElementById('menu-close');
+const headerContainer = document.getElementById('header');
 
 buttonMenuMobile.addEventListener('click', toggleMenu);
+buttonCloseMenuMobile.addEventListener('click', toggleMenu);
+document.addEventListener('scroll', addBoxShadow);
 
-buttonCloseMenuMobile.addEventListener('click', toggleMenu)
+
+function addBoxShadow() {
+    window.scrollY > 100
+    ? headerContainer.classList.add('shadow-lg')
+    : headerContainer.classList.remove('shadow-lg')
+}
 
 function toggleMenu() {
     menuNavContainer.classList.toggle('show-menu');
 }
 
+
+
 // Swiper JS
 const swiper = new Swiper('.swiper', {
+
     slidesPerView: 3,
     spaceBetween: 20,
     pagination: {
@@ -32,4 +43,5 @@ const swiper = new Swiper('.swiper', {
 
         }
     }
+
 });

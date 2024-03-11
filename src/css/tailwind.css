@@ -790,10 +790,6 @@ i{
   margin-top: 1.75rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -817,22 +813,6 @@ i{
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-72{
-  width: 18rem;
-}
-
-.w-9{
-  width: 2.25rem;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.flex-1{
-  flex: 1 1 0%;
 }
 
 .cursor-grab{
@@ -875,18 +855,6 @@ i{
   gap: 1.25rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-7{
   gap: 1.75rem;
 }
@@ -897,10 +865,6 @@ i{
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-sm{
-  border-radius: 0.125rem;
 }
 
 .rounded-md{
@@ -941,14 +905,14 @@ i{
   border-bottom-color: rgb(174 56 36 / var(--tw-border-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-brown-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(174 56 36 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .px-5{
@@ -966,29 +930,24 @@ i{
   padding-right: 1.75rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-16{
@@ -1133,28 +1092,16 @@ i{
     order: 2;
   }
 
+  .min-lg\:mt-0{
+    margin-top: 0px;
+  }
+
   .min-lg\:mt-10{
     margin-top: 2.5rem;
   }
 
   .min-lg\:mt-32{
     margin-top: 8rem;
-  }
-
-  .min-lg\:mt-0{
-    margin-top: 0px;
-  }
-
-  .min-lg\:mt-4{
-    margin-top: 1rem;
-  }
-
-  .min-lg\:mt-44{
-    margin-top: 11rem;
-  }
-
-  .min-lg\:mt-40{
-    margin-top: 10rem;
   }
 
   .min-lg\:flex{
@@ -1209,18 +1156,6 @@ i{
     gap: 1.75rem;
   }
 
-  .min-lg\:gap-72{
-    gap: 18rem;
-  }
-
-  .min-lg\:gap-5{
-    gap: 1.25rem;
-  }
-
-  .min-lg\:gap-56{
-    gap: 14rem;
-  }
-
   .min-lg\:rounded-md{
     border-radius: 0.375rem;
   }
@@ -1234,20 +1169,12 @@ i{
     padding-bottom: 8rem;
   }
 
-  .min-lg\:pr-14{
-    padding-right: 3.5rem;
-  }
-
   .min-lg\:pb-44{
     padding-bottom: 11rem;
   }
 
-  .min-lg\:pb-4{
-    padding-bottom: 1rem;
-  }
-
-  .min-lg\:pb-48{
-    padding-bottom: 12rem;
+  .min-lg\:pr-14{
+    padding-right: 3.5rem;
   }
 
   .min-lg\:text-left{

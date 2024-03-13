@@ -6,7 +6,6 @@ const headerContainer = document.getElementById('header');
 const sections = document.querySelectorAll('main section[id]');
 
 buttonMenuMobile.addEventListener('click', toggleMenu);
-buttonCloseMenuMobile.addEventListener('click', toggleMenu);
 
 window.addEventListener('scroll', function() {
     addBoxShadow();

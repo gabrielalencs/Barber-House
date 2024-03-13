@@ -19,11 +19,12 @@ module.exports = {
         '[-40]': '-40px',
         '520': '520px',
         '650': '650px',
+        '25.5': '25.5rem'
       },
       screens: {
         'max-lg': {'max': '992px'},
-        'min-lg': {'min': '992px'},
-      },
+        'min-lg': {'min': '992px'},  
+      }
     }
   },
 }

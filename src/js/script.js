@@ -1,9 +1,9 @@
 const buttonMenuMobile = document.getElementById('menu-btn');
 const menuNavContainer = document.getElementById('menu-container');
+const menuNavLinks = document.querySelectorAll('#header ul li');
 const buttonCloseMenuMobile = document.getElementById('menu-close');
 const headerContainer = document.getElementById('header');
 const sections = document.querySelectorAll('main section[id]');
-
 
 buttonMenuMobile.addEventListener('click', toggleMenu);
 buttonCloseMenuMobile.addEventListener('click', toggleMenu);
@@ -11,6 +11,12 @@ buttonCloseMenuMobile.addEventListener('click', toggleMenu);
 window.addEventListener('scroll', function() {
     addBoxShadow();
     activateMenuAtCurrentSection();
+});
+
+menuNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        toggleMenu();
+    });
 });
 
 

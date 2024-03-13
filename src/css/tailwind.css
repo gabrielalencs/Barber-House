@@ -812,6 +812,18 @@ nav ul li a.active {
   margin-top: 1.75rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -883,10 +895,6 @@ nav ul li a.active {
 
 .gap-7{
   gap: 1.75rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .overflow-x-hidden{
@@ -1195,16 +1203,12 @@ nav ul li a.active {
     gap: 2.5rem;
   }
 
-  .min-lg\:gap-7{
-    gap: 1.75rem;
-  }
-
-  .min-lg\:gap-5{
-    gap: 1.25rem;
-  }
-
   .min-lg\:gap-4{
     gap: 1rem;
+  }
+
+  .min-lg\:gap-7{
+    gap: 1.75rem;
   }
 
   .min-lg\:rounded-md{

@@ -1156,12 +1156,12 @@ nav ul li a.active {
     height: 100%;
   }
 
-  .min-lg\:w-96{
-    width: 24rem;
-  }
-
   .min-lg\:w-100{
     width: 1000px;
+  }
+
+  .min-lg\:w-96{
+    width: 24rem;
   }
 
   .min-lg\:flex-1{

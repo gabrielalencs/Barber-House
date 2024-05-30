@@ -448,12 +448,6 @@ video {
   display: none;
 }
 
-*{
-  margin: 0px;
-  box-sizing: border-box;
-  padding: 0px;
-}
-
 html{
   scroll-behavior: smooth;
 }

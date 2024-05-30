@@ -8,7 +8,7 @@ module.exports = {
         'dm-sans': ['DM Sans','sans-serif']
       }, 
       colors: {
-        'brown-primary': '#AE3824',
+        'brown-primary': '#000080',
         'brown-secondary': '#23120F',
         'white-primary': '#FAF9F9',
         'gray-primary': '#757575'

@@ -80,3 +80,18 @@ const swiper = new Swiper('.swiper', {
     }
 
 });
+
+
+const buttonLoginUser = document.querySelector('.header__btn-login');
+const containerLogin = document.querySelector('.container-login');
+const buttonCloseLogin = document.querySelector('.close-btn-login');
+
+buttonLoginUser.addEventListener('click', () => {
+    containerLogin.classList.remove('hidden-login');
+    document.body.style.overflow = 'hidden';
+});
+
+buttonCloseLogin.addEventListener('click', () => {
+    containerLogin.classList.add('hidden-login');
+    document.body.style.overflow = 'auto';
+});

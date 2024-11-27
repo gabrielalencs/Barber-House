@@ -33,7 +33,7 @@
             <div>
                 <img src="src/image/logo-white-and-orange.svg" alt="Logo Barber House">
             </div>
-            <nav>
+            <nav class="navigationHeader">
                 <ul class="max-lg:menu-mobile min-lg:menu-desktop" id="menu-container">
                     <li>
                         <i class="icon-close text-5xl min-lg:hidden" id="menu-close"></i>
@@ -69,6 +69,10 @@
                         </a>
                     </li>
                 </ul>
+
+                <div class="buttonHeader">
+                    <button class="header__btn-login">Login</button>
+                </div>
             </nav>
             <div class="min-lg:hidden">
                 <i class="icon-menu text-3xl" id="menu-btn"></i>
@@ -388,6 +392,45 @@
         </div>
     </footer>
 
+    <div class="container-login hidden-login">
+        <div class="login">
+            <div class="title-row">
+                <h1>Login Usuário</h1>
+                <i class="bi bi-x-circle close-btn-login"></i>
+            </div>
+
+            <div class="login-row">
+                <div class="login-icon">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <input type="text" placeholder="Digite seu Nome" class="login-input">
+            </div>
+
+            <div class="login-row">
+                <div class="login-icon">
+                    <i class="bi bi-envelope-at"></i>
+                </div>
+                <input type="email" placeholder="Digite seu Email" class="login-input">
+            </div>
+
+            <div class="login-row">
+                <div class="login-icon">
+                    <i class="bi bi-lock-fill"></i>
+                </div>
+                <input type="password" placeholder="Digite sua Senha" class="login-input">
+            </div>
+
+            <div class="login-buttons">
+                <div class="login-button">
+                    <button>Entrar</button>
+                </div>
+
+                <div class="login-button btn-register">
+                    <button>Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- AOS Scroll -->
